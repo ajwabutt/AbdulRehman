@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story 💕</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script src="https://sdk.canva.com/design-element/v1/sdk.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+</head>
+<body class="h-full">
+  <div id="app" class="w-full h-full overflow-auto">
+    <!-- Floating Hearts Background -->
+    <div id="floating-hearts" class="fixed inset-0 pointer-events-none overflow-hidden z-0"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card shadow-lg">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl heartbeat">💕</span>
+            <span class="script-font text-xl text-pink-600" id="nav-title">Our Love</span>
+          </div>
+          <div class="hidden md:flex items-center gap-6">
+            <button class="nav-item text-pink-700 font-medium px-2 py-1 active" data-page="home">Home</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="story">Our Story</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="wedding">Wedding</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="travels">His Travels</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="pakistan">Pakistan</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="dreams">Dreams</button>
+            <button class="nav-item text-pink-700 font-medium px-2 py-1" data-page="letter">Love Letter</button>
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden text-pink-600 text-2xl">☰</button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-pink-200">
+        <div class="flex flex-col p-4 gap-3">
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2 active" data-page="home">🏠 Home</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="story">💑 Our Story</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="wedding">💒 Wedding</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="travels">✈️ His Travels</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="pakistan">🇵🇰 Pakistan</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="dreams">🌟 Dreams</button>
+          <button class="nav-item text-pink-700 font-medium text-left px-2 py-2" data-page="letter">💌 Love Letter</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div id="pages-container" class="pt-16">
+      
+      <!-- HOME PAGE -->
+      <section id="page-home" class="page min-h-screen gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+          <div class="absolute top-10 left-10 text-6xl emoji-float-1" >🌹</div>
+          <div class="absolute top-20 right-20 text-5xl emoji-float-2">💐</div>
+          <div class="absolute bottom-20 left-20 text-4xl emoji-float-3">🦋</div>
+          <div class="absolute bottom-10 right-10 text-6xl emoji-float-4">✨</div>
+        </div>
+        
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20">
+          <div>
+            <div class="text-8xl mb-8 scale-in">💕</div>
+            <h1 class="home-title text-white drop-shadow-xl mb-6 text-center" id="">
+             My love
+            </h1>
+            <p class="home-subtitle text-white/90 text-xl md:text-2xl mb-8 font-light text-center px-4">
+              A Beautiful Long Distance Love Story
+            </p>
+            <div class="home-timeline flex flex-wrap justify-center gap-4 mb-8">
+              <div class="glass-card rounded-2xl px-6 py-4 text-center hover:shadow-2xl">
+                <div class="text-3xl mb-2 scale-in">You</div>
+                <p class="text-pink-700 font-semibold">Sweden</p>
+              </div>
+              <div class="text-4xl text-white self-center pulse-heart">💕</div>
+              <div class="glass-card rounded-2xl px-6 py-4 text-center hover:shadow-2xl">
+                <div class="text-3xl mb-2 scale-in">Me</div>
+                <p class="text-pink-700 font-semibold">Pakistan</p>
+              </div>
+            </div>
+            
+            <!-- Timeline Preview -->
+            <div class="home-timeline glass-card rounded-3xl p-8 max-w-2xl mx-auto hover:shadow-2xl">
+              <h2 class="script-font text-3xl text-pink-600 mb-6 text-center">Our Journey</h2>
+              <div class="flex flex-col md:flex-row justify-around gap-6">
+                <div class="text-center rotate-in" style="animation-delay: 0.2s;">
+                  <div class="text-4xl mb-2 bounce-animation">💬</div>
+                  <p class="text-pink-800 font-bold" id="first-chat-year">2022</p>
+                  <p class="text-pink-600 text-sm">First Chat</p>
+                </div>
+                <div class="text-center rotate-in" style="animation-delay: 0.4s;">
+                  <div class="text-4xl mb-2 bounce-animation" style="animation-delay: 0.3s;">💍</div>
+                  <p class="text-pink-800 font-bold" id="wedding-year">6 Dec 2024</p>
+                  <p class="text-pink-600 text-sm">Our Wedding</p>
+                </div>
+                <div class="text-center rotate-in" style="animation-delay: 0.6s;">
+                  <div class="text-4xl mb-2 bounce-animation" style="animation-delay: 0.6s;">🌍</div>
+                  <p class="text-pink-800 font-bold">Forever</p>
+                  <p class="text-pink-600 text-sm">Together Soon</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Video Section -->
+            <div class="home-video-section mt-12 max-w-4xl mx-auto px-4">
+  <h3 class="script-font text-3xl text-white mb-4 text-center glow-text">Our Special Video</h3>
+  <div id="home-video-container" class="video-container bg-black/20 rounded-3xl overflow-hidden relative shadow-2xl">
+    
+    <video id="home-video" class="w-full aspect-video block" controls>
+      <source src="video/WhatsApp Video 2026-02-09 at 6.14.57 AM.mp4" type="video/mp4">
+    </video>
+    </div>
+  </div>
+
+</section>
+
+      <!-- OUR STORY PAGE -->
+      <section id="page-story" class="page hidden min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16 slide-in">
+            <div class="text-6xl mb-4">💑</div>
+            <h1 class="script-font text-5xl text-pink-600 mb-4">Our Story</h1>
+            <p class="text-pink-400 text-lg">How two hearts found each other across the miles</p>
+          </div>
+          
+          <!-- Story Timeline -->
+          <div class="relative">
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 timeline-line rounded-full"></div>
+            
+            <!-- Story Item 1 -->
+            <div class="relative flex items-center mb-16 slide-in" style="animation-delay: 0.2s;">
+              <div class="w-1/2 pr-8 text-right">
+                <div class="glass-card rounded-2xl p-6 inline-block">
+                  <div class="text-4xl mb-3">💬</div>
+                  <h3 class="script-font text-2xl text-pink-600 mb-2">First Message</h3>
+                  <p class="text-pink-700">The day we started talking online. Two cousins, one destiny.</p>
+                </div>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 timeline-dot rounded-full border-4 border-white"></div>
+              <div class="w-1/2 pl-8">
+                <span class="text-pink-500 font-bold" id="story-year-1">2022</span>
+              </div>
+            </div>
+            
+            <!-- Story Item 2 -->
+            <div class="relative flex items-center mb-16 slide-in" style="animation-delay: 0.4s;">
+              <div class="w-1/2 pr-8 text-right">
+                <span class="text-pink-500 font-bold">Growing Closer</span>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 timeline-dot rounded-full border-4 border-white"></div>
+              <div class="w-1/2 pl-8">
+                <div class="glass-card rounded-2xl p-6 inline-block">
+                  <div class="text-4xl mb-3">💕</div>
+                  <h3 class="script-font text-2xl text-pink-600 mb-2">Falling in Love</h3>
+                  <p class="text-pink-700">Late night calls, endless messages, and hearts intertwining despite the distance.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Story Item 3 -->
+            <div class="relative flex items-center mb-16 slide-in" style="animation-delay: 0.6s;">
+              <div class="w-1/2 pr-8 text-right">
+                <div class="glass-card rounded-2xl p-6 inline-block">
+                  <div class="text-4xl mb-3">💍</div>
+                  <h3 class="script-font text-2xl text-pink-600 mb-2">The Proposal</h3>
+                  <p class="text-pink-700">Not a question, but a blessing. when his mother asked and my father said YES!</p>
+                </div>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 timeline-dot rounded-full border-4 border-white"></div>
+              <div class="w-1/2 pl-8">
+                <span class="text-pink-500 font-bold">The Moment</span>
+              </div>
+            </div>
+            
+            <!-- Story Item 4 -->
+            <div class="relative flex items-center slide-in" style="animation-delay: 0.8s;">
+              <div class="w-1/2 pr-8 text-right">
+                <span class="text-pink-500 font-bold" id="story-wedding-date">6 December 2024</span>
+              </div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 timeline-dot rounded-full border-4 border-white"></div>
+              <div class="w-1/2 pl-8">
+                <div class="glass-card rounded-2xl p-6 inline-block">
+                  <div class="text-4xl mb-3">💒</div>
+                  <h3 class="script-font text-2xl text-pink-600 mb-2">Our Wedding</h3>
+                  <p class="text-pink-700">The most magical day when we became husband and wife!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         <br><br> 
+           <div class="mt-20 px-4">
+  <h2 class="script-font text-4xl md:text-5xl text-pink-600 text-center mb-12 drop-shadow-sm">
+    Our Chlidhood Memories
+  </h2>     
+    <div class="mt-20 w-full px-4 md:px-10">
+<!--   
+  <h2 class="script-font text-4xl text-pink-600 text-center mb-10">Our Childhood Memories</h2> -->
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 w-full max-w-[1400px] mx-auto">
+    
+    <div class="photo-frame rounded-3xl overflow-hidden bg-pink-100 aspect-square border-2 border-dashed border-pink-300 shadow-2xl relative w-full">
+      <img src="image/abdul.jpg.jpeg" alt="Memory 1" class="absolute inset-0 w-full h-full object-cover object-top">
+    </div>
+
+    <div class="photo-frame rounded-3xl overflow-hidden bg-pink-100 aspect-square border-2 border-dashed border-pink-300 shadow-2xl relative w-full">
+      <img src="image/ajwa.jpg.jpeg" alt="Memory 2" class="absolute inset-0 w-full h-full object-cover object-top">
+    </div>
+
+  </div>
+</div>
+  
+  </section>       
+
+      <!-- WEDDING PAGE -->
+      <section id="page-wedding" class="page hidden min-h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-white py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16 slide-in">
+            <div class="text-7xl mb-4">💒</div>
+            <h1 class="script-font text-5xl text-pink-600 mb-4">Our Wedding Day</h1>
+            <p class="text-pink-400 text-xl" id="wedding-date-display">6th December 2024</p>
+            <p class="text-pink-400 mt-2">The day our dreams came true</p>
+          </div>
+          
+    <div class="max-w-5xl mx-auto mb-12 px-4">
+  <div class="photo-frame rounded-3xl overflow-hidden bg-pink-100 aspect-video flex items-center justify-center border-4 border-white shadow-2xl relative">
+    
+    <img src="image/wedding.jpeg" alt="Wedding Main" class="w-full h-full object-cover object-center">
+
+  </div>
+</div>
+          <!-- Wedding Details -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="glass-card rounded-2xl p-6 text-center slide-in" style="animation-delay: 0.2s;">
+              <div class="text-4xl mb-3">💐</div>
+              <h3 class="script-font text-xl text-pink-600 mb-2">The Ceremony</h3>
+              <p class="text-pink-700 text-sm">A beautiful moment surrounded by love and blessings</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center slide-in" style="animation-delay: 0.4s;">
+              <div class="text-4xl mb-3">💋</div>
+              <h3 class="script-font text-xl text-pink-600 mb-2">Our Vows</h3>
+              <p class="text-pink-700 text-sm">Promises of forever, love, and togetherness</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center slide-in" style="animation-delay: 0.6s;">
+              <div class="text-4xl mb-3">🎉</div>
+              <h3 class="script-font text-xl text-pink-600 mb-2">Celebration</h3>
+              <p class="text-pink-700 text-sm">Joy, laughter, and beautiful memories created</p>
+            </div>
+          </div>
+          
+          <!-- Wedding Gallery -->
+ <div class="mt-12 px-4 max-w-6xl mx-auto">
+  <h2 class="script-font text-4xl text-pink-600 text-center mb-10">Wedding Gallery</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-1.jpeg" alt="Gallery 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-2-.jpeg" alt="Gallery 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-3.jpeg" alt="Gallery 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-4.jpeg" alt="Gallery 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-5.jpeg" alt="Gallery 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+    <div class="photo-frame rounded-2xl overflow-hidden bg-pink-100 aspect-square shadow-md border-2 border-white relative group">
+      <img src="image/piture-6.jpeg" alt="Gallery 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+    </div>
+
+  </div>
+</div>
+         <br><br><br><br><br>
+          <!-- Wedding Video -->
+         <div class="mt-12 max-w-xl mx-auto text-center px-4">
+  <div class="gift-container cursor-pointer relative flex flex-col justify-center items-center" onclick="openGift()">
+    
+    <div id="gift-box" class="transition-all duration-500 transform hover:scale-110">
+      <div class="text-8xl md:text-9xl mb-4">🎁</div>
+      <p class="text-pink-500 font-bold text-xl tracking-wide animate-pulse" style="font-family: 'Arial', sans-serif;">
+        💖 Click the gift! ✨
+      </p>
+    </div>
+
+    <div id="cake-reveal" class="hidden opacity-0 transform scale-50 transition-all duration-700 ease-out">
+      <div class="relative bg-white p-4 rounded-3xl shadow-2xl border-4 border-pink-100">
+        
+        <img src="image/flower.webp" 
+             alt="Valentine Cake" 
+             class="rounded-2xl shadow-md max-w-full h-auto" 
+             style="max-height: 350px; display: block;">
+
+        <div class="mt-6">
+          <h4 class="text-3xl font-extrabold text-pink-600 mb-2" style="font-family: 'Brush Script MT', cursive;">
+            Happy Valentine's Day! 
+          </h4>
+          <p class="text-gray-500 italic text-lg">for you my love.</p>
+        </div>
+
+        <div class="absolute -top-6 -right-6 text-4xl animate-bounce">💖</div>
+        <div class="absolute -top-6 -left-6 text-4xl animate-bounce" style="animation-delay: 0.5s;">✨</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+         <!-- <div class="mt-12 max-w-3xl mx-auto">
+  <h3 class="script-font text-2xl text-pink-600 text-center mb-6">Wedding Video</h3>
+  <div class="video-container bg-pink-100 relative" id="wedding-video-container">
+    <div class="upload-zone rounded-2xl p-8 text-center absolute inset-0 flex flex-col items-center justify-center hidden" id="wedding-video-upload">
+      <div class="text-5xl mb-4">🎥</div>
+      <p class="text-pink-500 mb-4">Upload Wedding Video</p>
+      <label class="custom-file-upload">
+        <input type="file" accept="video/*" id="wedding-video-input">
+      </label>
+    </div>
+    <video id="wedding-video" class="w-full h-full rounded-2xl shadow-lg" controls src="video/"></video>
+  </div>
+</div> -->
+</section>
+
+      <!-- TRAVELS PAGE -->
+     <section id="page-travels" class="page hidden min-h-screen bg-gradient-to-br from-blue-50 via-pink-50 to-purple-50 py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 slide-in">
+      <div class="text-6xl mb-4">✈️</div>
+      <h1 class="script-font text-5xl text-pink-600 mb-4">His Adventures</h1>
+      <p class="text-pink-400 text-lg">The beautiful places he explored</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="country-card bg-white rounded-3xl p-6 shadow-xl slide-in">
+        <div class="text-center mb-6">
+          <div class="text-5xl mb-3"></div>
+          <h2 class="script-font text-3xl text-pink-600">Turkey</h2>
+          <p class="text-pink-400 text-sm mt-1">Land of Ancient Wonders</p>
+        </div>
+        <div class="photo-frame rounded-xl overflow-hidden bg-pink-100 aspect-square flex items-center justify-center border-2 border-pink-200" id="turkey-photo-1">
+          <img src="image/turkey.jpeg" alt="Turkey" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="country-card bg-white rounded-3xl p-6 shadow-xl slide-in">
+        <div class="text-center mb-6">
+          <div class="text-5xl mb-3"></div>
+          <h2 class="script-font text-3xl text-pink-600">Malta</h2>
+          <p class="text-pink-400 text-sm mt-1">Mediterranean Paradise</p>
+        </div>
+        <div class="photo-frame rounded-xl overflow-hidden bg-pink-100 aspect-square flex items-center justify-center border-2 border-pink-200" id="malta-photo-1">
+          <img src="image/malta.jpeg" alt="Malta" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="country-card bg-white rounded-3xl p-6 shadow-xl slide-in">
+        <div class="text-center mb-6">
+          <div class="text-5xl mb-3"></div>
+          <h2 class="script-font text-3xl text-pink-600">Spain</h2>
+          <p class="text-pink-400 text-sm mt-1">Land of Passion</p>
+        </div>
+        <div class="photo-frame rounded-xl overflow-hidden bg-pink-100 aspect-square flex items-center justify-center border-2 border-pink-200" id="spain-photo-1">
+          <img src="image/spain.jpeg" alt="Spain" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div> 
+<br><br>
+          <!-- Future Travel Dreams -->
+           <section>
+          <div class="mt-16 text-center glass-card rounded-3xl p-8 max-w-2xl mx-auto">
+            <div class="text-5xl mb-4">🌍💕</div>
+            <h2 class="script-font text-3xl text-pink-600 mb-4">World Tour Together</h2>
+            <p class="text-pink-700">Soon we'll explore the world together, hand in hand, creating new memories in every corner of the globe!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAKISTAN PAGE -->
+      <section id="page-pakistan" class="page hidden min-h-screen bg-gradient-to-br from-green-50 via-white to-pink-50 py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16 slide-in">
+            <div class="text-6xl mb-4"></div>
+            <h1 class="script-font text-5xl text-pink-600 mb-4">Pakistan Visit</h1>
+            <p class="text-pink-400 text-lg">Eid Memories & Beautiful Moments</p>
+          </div>
+          
+          <!-- Main Visit Photo -->
+         <div class="max-w-3xl mx-auto mb-12">
+  <div class="photo-frame rounded-3xl overflow-hidden bg-green-50 aspect-video flex items-center justify-center border-4 border-white shadow-2xl" id="pakistan-main-photo">
+    
+    <img src="image/pk-1.jpeg" alt="Pakistan Visit" class="w-full h-full object-cover object-center">
+
+  </div>
+</div>
+          
+          <!-- Eid Memories -->
+          <div class="glass-card rounded-3xl p-8 mb-12">
+  <h2 class="script-font text-3xl text-pink-600 text-center mb-8">🌙 Eid Celebrations</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    
+    <div class="photo-frame rounded-xl overflow-hidden bg-green-50 aspect-square flex items-center justify-center border-2 border-white shadow-sm" id="eid-photo-1">
+      <img src="image/eid.webp" alt="Eid 1" class="w-full h-full object-cover">
+    </div>
+
+    <div class="photo-frame rounded-xl overflow-hidden bg-green-50 aspect-square flex items-center justify-center border-2 border-white shadow-sm" id="eid-photo-2">
+      <img src="image/eid-1.jpeg" alt="Eid 2" class="w-full h-full object-cover">
+    </div>
+
+    <div class="photo-frame rounded-xl overflow-hidden bg-green-50 aspect-square flex items-center justify-center border-2 border-white shadow-sm" id="eid-photo-3">
+      <img src="image/fire.avif" alt="Eid 3" class="w-full h-full object-cover">
+    </div>
+
+    <div class="photo-frame rounded-xl overflow-hidden bg-green-50 aspect-square flex items-center justify-center border-2 border-white shadow-sm" id="eid-photo-4">
+      <img src="image/eid-2.jpeg" alt="Eid 4" class="w-full h-full object-cover">
+    </div>
+
+  </div>
+</div>
+                  
+          <!-- More Pakistan Photos -->
+    <div>
+  <h2 class="script-font text-3xl text-pink-600 text-center mb-8">More Memories</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <div class="photo-frame rounded-xl overflow-hidden bg-pink-50 aspect-square flex items-center justify-center border-2 border-white shadow-md" id="pak-memory-1">
+      <img src="image/mer-1.jpeg" alt="Memory 1" class="w-full h-full object-cover">
+    </div>
+
+    <div class="photo-frame rounded-xl overflow-hidden bg-pink-50 aspect-square flex items-center justify-center border-2 border-white shadow-md" id="pak-memory-2">
+      <img src="image/mer-2.jpeg" alt="Memory 2" class="w-full h-full object-cover">
+    </div>
+
+    <div class="photo-frame rounded-xl overflow-hidden bg-pink-50 aspect-square flex items-center justify-center border-2 border-white shadow-md" id="pak-memory-3">
+      <img src="image/mer-3.jpeg" alt="Memory 3" class="w-full h-full object-cover">
+    </div>
+
+  </div>
+</div>
+            
+          
+          <!-- Video -->
+         <!-- <div class="mt-12 max-w-3xl mx-auto px-4">
+  <h3 class="script-font text-2xl text-pink-600 text-center mb-6">Pakistan Visit Video</h3>
+  
+  <div class="video-container bg-pink-100 rounded-3xl overflow-hidden relative shadow-lg" id="pakistan-video-container">
+    
+    <video id="pakistan-video" class="w-full h-full block" controls>
+      <source src="video/our.video.mp4" type="video/mp4">
+    </video>
+
+    
+  </div>
+</div>  -->
+<div class="mt-12 max-w-3xl mx-auto px-4">
+  <h3 class="script-font text-2xl text-pink-600 text-center mb-6">Pakistan Visit Video</h3>
+  
+  <div class="modern-video-wrapper">
+    <div class="video-blur-bg"></div>
+    
+    <video id="pakistan-video" controls>
+      <source src="video/our.video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+      </section>
+
+      <!-- DREAMS PAGE -->
+      <section id="page-dreams" class="page hidden min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50 py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16 slide-in">
+            <div class="text-6xl mb-4">🌟</div>
+            <h1 class="script-font text-5xl text-pink-600 mb-4">Our Future Dreams</h1>
+            <p class="text-pink-400 text-lg">Everything we'll achieve together</p>
+          </div>
+          
+          <!-- Dreams Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- World Tour -->
+            <div class="dream-card rounded-3xl p-8 shadow-xl slide-in" style="animation-delay: 0.2s;">
+              <div class="text-6xl mb-4 text-center">🌍✈️</div>
+              <h2 class="script-font text-3xl text-pink-600 text-center mb-4">World Tour</h2>
+              <p class="text-pink-700 text-center mb-6">Exploring every corner of this beautiful world together, creating memories in Paris, Tokyo, New York, and beyond!</p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">🗼 Paris</span>
+                <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">🗽 New York</span>
+                <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">🗻 Japan</span>
+                <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">🏝️ Maldives</span>
+                <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">🦘 Australia</span>
+              </div>
+            </div>
+            
+            <!-- Dream Home -->
+            <div class="dream-card rounded-3xl p-8 shadow-xl slide-in" style="animation-delay: 0.4s;">
+              <div class="text-6xl mb-4 text-center">🏠</div>
+              <h2 class="script-font text-3xl text-pink-600 text-center mb-4">Our Big House</h2>
+              <p class="text-pink-700 text-center mb-6">A beautiful big home where our love will grow, filled with laughter, warmth, and countless happy moments!</p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">🛋️ Cozy Living</span>
+                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">🌺 Garden</span>
+                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">👨‍🍳 Big Kitchen</span>
+              </div>
+            </div>
+            
+            <!-- Baby -->
+            <div class="dream-card rounded-3xl p-8 shadow-xl slide-in" style="animation-delay: 0.6s;">
+              <div class="text-6xl mb-4 text-center">👨‍👩‍👧‍👦</div>
+              <h2 class="script-font text-3xl text-pink-600 text-center mb-4">Our Little Angel</h2>
+              <p class="text-pink-700 text-center mb-6">A beautiful baby who will be the perfect blend of us both, filling our lives with even more love and joy!</p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm">🍼 First Steps</span>
+                <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm">😴 Sweet Dreams</span>
+                <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-sm">🎀 Little Outfits</span>
+              </div>
+            </div>
+            
+            <!-- Career Goals -->
+            <div class="dream-card rounded-3xl p-8 shadow-xl slide-in" style="animation-delay: 0.8s;">
+              <div class="text-6xl mb-4 text-center">💼💰</div>
+              <h2 class="script-font text-3xl text-pink-600 text-center mb-4">Earning Together</h2>
+              <p class="text-pink-700 text-center mb-6">Building our empire together, supporting each other's dreams, and achieving financial success as a power couple!</p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">📈 Success</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">🤝 Together</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">🎯 Goals</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Together Forever -->
+          <div class="mt-16 text-center glass-card rounded-3xl p-10 max-w-3xl mx-auto slide-in" style="animation-delay: 1s;">
+            <div class="text-7xl mb-6 heartbeat">💕</div>
+            <h2 class="script-font text-4xl text-pink-600 mb-4">Together Forever</h2>
+            <p class="text-pink-700 text-lg">No matter what dreams we chase, the most important thing is that we'll always be together. Sweden to Pakistan, our love knows no distance!</p>
+          </div>
+        </div>
+      </section>
+
+ <section id="page-letter" class="page hidden min-h-screen letter-bg py-20 px-4">
+  <div class="max-w-3xl mx-auto">
+    
+    <div class="text-center mb-12 slide-in">
+      <div class="text-6xl mb-4">💌</div>
+      <h1 class="script-font text-5xl text-slate-100 mb-4 drop-shadow-md">Love Letter</h1>
+      <p class="text-slate-600 text-lg italic">Words from my heart to yours</p>
+    </div>
+    
+    <div class="glass-card rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden slide-in" style="animation-delay: 0.3s;">
+      
+      <div class="absolute top-4 left-4 text-4xl opacity-20">🌹</div>
+      <div class="absolute top-4 right-4 text-4xl opacity-20">🌹</div>
+      <div class="absolute bottom-4 left-4 text-4xl opacity-20">💕</div>
+      <div class="absolute bottom-4 right-4 text-4xl opacity-20">💕</div>
+      
+      <div class="relative z-10">
+        <p class="text-pink-500 text-sm mb-4">Valentine's Day 2025</p>
+        
+        <h2 class="script-font text-3xl text-pink-600 mb-6" id="letter-greeting">My Dearest Love,</h2>
+        
+        <div class="space-y-4 text-pink-800 leading-relaxed mb-8" id="letter-content">
+          <p>
+            Meeting you was the most beautiful moment of my life. Ever since we started talking, my world has changed. You were my cousin, then my friend, and now you are my whole world—my dear husband! 💕
+          </p>
+
+          <p>
+            This long distance is hard, but your love makes me stronger every day. From Sweden to Pakistan, no distance can stop our love. December 6th, 2024, our wedding day, was the most special day of my life!
+          </p>
+
+          <p>
+            I am waiting for the day we are together, building our home, traveling the world, and having our beautiful baby. All our dreams will come true—you and me, side by side!
+          </p>
+
+          <p>
+            I love you more than words can say. Happy Valentine's Day, my forever love! 🌹
+          </p>
+        </div>
+
+        <div class="text-right">
+          <p class="script-font text-2xl text-pink-600" id="">Forever Yours,</p>
+          <p class="script-font text-3xl text-pink-700 mt-2" id="">Your Wife 💕</p>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+</section>
+          
+        
+    
+    <!-- Footer -->
+     <footer class="w-full block bg-gradient-to-r from-pink-500 to-rose-500 text-white py-8 px-4 text-center m-0 border-none">
+    <!-- <footer class="bg-gradient-to-r from-pink-500 to-rose-500 text-white py-8 px-4 text-center"> -->
+      <div class="max-w-4xl mx-auto">
+        <div class="text-4xl mb-4">💕</div>
+        <p class="script-font text-2xl mb-2" id="">Made with love for my husband</p>
+        <p class="text-pink-100">Happy Valentine's Day 2025</p>
+        <p class="text-pink-200 text-sm mt-4">🇵🇰 Pakistan ↔ Sweden 🇸🇪</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Music Button -->
+  <button id="music-toggle" class="music-control" title="Toggle Music">
+    🎵
+  </button>
+
+  <!-- Background Music Audio -->
+  <audio id="bg-music" loop preload="metadata">
+    <source src="song/lover-song.mp4" type="audio/mpeg">
+  </audio>
+
+  
+
+  <style>@view-transition { navigation: auto;} </style>
+
+  <script src="script.js" type="text/javascript"></script>
+ </head>
+ <body><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cacd22d4121f8e2',t:'MTc3MDU3MTQ3MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
